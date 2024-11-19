@@ -7,6 +7,54 @@
   <title>Sign Up Form</title>
 </head>
 <body>
-
+  <div id="logo-section">
+    <div id="logo"><img src="img/odin-lined.png" alt="odin-logo">ODIN</div>
+    <div id="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+  </div>
+  <div id="form-section">
+    <form action="post" url="#">
+      <div id="form-section-top">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+        <p>You <i>know</i> you want to.</p>
+      </div>
+      <div id="form-section-mid">
+        <p>Let's do this!</p>
+        <div id="form-input">
+          <div class="form-column">
+            <div class="input-element">
+              <label for="first-name">FIRST NAME</label>
+              <input id="first-name" type="text" required>
+            </div>
+            <div class="input-element">
+              <label for="mail">EMAIL</label>
+              <input id="mail" type="email" required>
+            </div>
+            <div class="input-element">
+              <label for="pwd">PASSWORD</label>
+              <input id="pwd" type="password" required>
+            </div>
+          </div>
+          <div class="form-column">
+            <div class="input-element">
+              <label for="last-name">LAST NAME</label>
+              <input id="last-name" type="text" required>
+            </div>
+            <div class="input-element">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input id="phone-number" type="tel" required>
+            </div>
+            <div class="input-element">
+              <label for="confirm-pwd">CONFIRM PASSWORD</label>
+              <input id="confirm-pwd" type="password" required>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="form-section-bottom">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
