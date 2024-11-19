@@ -82,7 +82,7 @@ body {
   padding-left: 3rem;
   height: 33%;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #form-section-top > p {
@@ -137,7 +137,6 @@ body {
   > span {
     font-size: .75rem;
     color: var(--input-error-border-color);
-
   }
 }
 
