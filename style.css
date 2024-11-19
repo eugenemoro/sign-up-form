@@ -134,19 +134,27 @@ body {
 .input-element {
   display: flex;
   flex-direction: column;
+  > span {
+    font-size: .75rem;
+    color: var(--input-error-border-color);
+
+  }
 }
 
 input {
   border: 1px solid var(--input-inactive-border-color);
   border-radius: 5px;
   height: 1.5rem;
+  background-color: var(--form-background-color);
+  padding-inline-start: 0.2rem;
 }
 
 input:focus {
   border-color: var(--input-focus-border-color);
 }
 
-input:user-invalid {
+input:user-invalid,
+input.error {
   border-color: var(--input-error-border-color);
 }
 

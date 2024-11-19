@@ -12,7 +12,7 @@
     <div id="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
   </div>
   <div id="form-section">
-    <form action="post" url="#">
+    <form id="sign-up-form" action="post" url="#">
       <div id="form-section-top">
         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
         <p>You <i>know</i> you want to.</p>
@@ -23,29 +23,35 @@
           <div class="form-column">
             <div class="input-element">
               <label for="first-name">FIRST NAME</label>
-              <input id="first-name" type="text" required>
+              <input id="first-name" type="text" autocomplete="given-name" required>
+              <span id="first-name-error">&nbsp;</span>
             </div>
             <div class="input-element">
               <label for="mail">EMAIL</label>
-              <input id="mail" type="email" required>
+              <input id="mail" type="email" autocomplete="email" required>
+              <span id="mail-error">&nbsp;</span>
             </div>
             <div class="input-element">
               <label for="pwd">PASSWORD</label>
-              <input id="pwd" type="password" required>
+              <input id="pwd" type="password" autocomplete="new-password" required>
+              <span id="pwd-error">&nbsp;</span>
             </div>
           </div>
           <div class="form-column">
             <div class="input-element">
               <label for="last-name">LAST NAME</label>
-              <input id="last-name" type="text" required>
+              <input id="last-name" type="text" autocomplete="family-name" required>
+              <span id="last-name-error">&nbsp;</span>
             </div>
             <div class="input-element">
               <label for="phone-number">PHONE NUMBER</label>
-              <input id="phone-number" type="tel" required>
+              <input id="phone-number" type="tel" autocomplete="tel" required>
+              <span id="phone-number-error">&nbsp;</span>
             </div>
             <div class="input-element">
               <label for="confirm-pwd">CONFIRM PASSWORD</label>
-              <input id="confirm-pwd" type="password" required>
+              <input id="confirm-pwd" type="password" autocomplete="new-password" required>
+              <span id="confirm-pwd-error">&nbsp;</span>
             </div>
           </div>
         </div>
@@ -57,4 +63,5 @@
     </form>
   </div>
 </body>
+<script src="script.js"></script>
 </html>
